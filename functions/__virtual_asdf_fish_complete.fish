@@ -1,3 +1,5 @@
 function __virtual_asdf_fish_complete
-    asdf list python | xargs
+    if test -d {$ASDF_DIR}/installs/python/;
+        ls {$ASDF_DIR}/installs/python/
+    end
 end
